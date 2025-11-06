@@ -1,111 +1,109 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>منصة لغتي - الصف السادس</title>
 
 <style>
-body {
+  body {
     font-family: "Cairo", sans-serif;
     background: #f4f7ff;
     margin: 0;
     padding: 0;
     text-align: center;
     position: relative;
-}
+    color: #003b73;
+  }
 
-/* الشعار كعلامة مائية */
-body::before {
+  /* شعار المدرسة كعلامة مائية */
+  body::before {
     content: "";
     position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+    inset: 0;
     background-image: url("https://i.postimg.cc/Lhdfcttc/IMG-7700.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.09;
+    background-size: 320px;
+    opacity: 0.10;
     z-index: -1;
-}
+  }
 
-header {
+  header {
     background: linear-gradient(to left, #0057b7, #d4af37);
-    padding: 20px;
-    color: white;
+    padding: 18px;
+    color: #fff;
     font-size: 26px;
     font-weight: bold;
-}
+    border-bottom: 4px solid #d4af37;
+  }
 
-.section-title {
+  .container {
+    width: 92%;
+    margin: 16px auto 28px;
+  }
+
+  .section-title {
     font-size: 22px;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    font-weight: 800;
+    margin: 12px 0;
     color: #003b73;
-}
+    text-align: right;
+    border-right: 6px solid #d4af37;
+    padding-right: 10px;
+  }
 
-.container {
-    width: 90%;
-    margin: auto;
-    margin-top: 10px;
-}
-
-.button {
+  .button {
     display: block;
-    background: white;
-    padding: 15px;
-    margin: 10px 0;
+    text-decoration: none;
+    background: #fff;
+    color: #003b73;
+    margin: 10px auto;
+    padding: 14px;
     border-radius: 12px;
     font-size: 20px;
-    font-weight: bold;
-    color: #003b73;
-    text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-weight: 700;
     border-right: 8px solid #d4af37;
-    transition: 0.2s;
-}
+    box-shadow: 0 4px 12px rgba(0,0,0,.12);
+    width: 90%;
+    max-width: 700px;
+    transition: .2s;
+  }
 
-.button:hover {
-    transform: scale(1.03);
-}
+  .button:hover {
+    transform: scale(1.02);
+  }
 
-/* تذييل */
-.footer {
-    margin-top: 30px;
-    padding: 15px;
-    font-size: 18px;
-    color: #003b73;
-    font-weight: bold;
-}
+  footer {
+    margin: 24px 0;
+    font-weight: 800;
+  }
 </style>
 </head>
-
 <body>
 
-<header>منصة لغتي - الصف السادس 📘</header>
+<header>📘 منصة لغتي - الصف السادس أ</header>
 
 <div class="container">
 
-<div class="section-title">الدروس 📚</div>
+  <div class="section-title">📚 دروس القواعد والإملاء</div>
 
-<a class="button" href="tahdheer-ighraa/">التحذير والإغراء</a>
-<a class="button" href="mad7-tham/">أسلوب المدح والذم</a>
-<a class="button" href="hamzat-wasl-qata3/">همزة الوصل والقطع</a>
-<a class="button" href="hamzat-ibn/">همزة ابن وابنة</a>
-<a class="button" href="hamza-middle/">الهمزة المتوسطة</a>
-<a class="button" href="hamza-end/">الهمزة المتطرفة</a>
-<a class="button" href="kana-wa-akhwatuha/">كان وأخواتها</a>
-<a class="button" href="inna-akhawatha/">إن وأخواتها</a>
-<a class="button" href="ism-alalah/">اسم الآلة</a>
-<a class="button" href="ism-fael-mafool/">اسم الفاعل واسم المفعول</a>
+  <a class="button" href="tahdheer-ighraa/">التحذير والإغراء</a>
+  <a class="button" href="mad7-tham/">أسلوب المدح والذم</a>
+  <a class="button" href="kana-wa-akhwatuha/">كان وأخواتها</a>
+  <a class="button" href="inna-akhawatiha/">إن وأخواتها</a>
+  <a class="button" href="ism-fael-mafool/">اسم الفاعل واسم المفعول</a>
+  <a class="button" href="ism-alalah/">اسم الآلة</a>
+  <a class="button" href="hamzat-wasl-qata3/">همزة الوصل والقطع</a>
+  <a class="button" href="hamzat-ibn/">همزة ابن وابنة</a>
+  <a class="button" href="hamza-middle/">الهمزة المتوسطة</a>
+  <a class="button" href="hamza-end/">الهمزة المتطرفة</a>
 
-<div class="section-title">اختبارات وتمارين ✏️</div>
+  <div class="section-title">✏️ تدريب الفهم القرائي</div>
+  <a class="button" href="reading-test/">اختبار الفهم القرائي</a>
 
-<a class="button" href="reading-test/">تدريب الفهم القرائي</a>
-
+  <footer>✨ إعداد الأستاذ مقرن المطيري ✨</footer>
 </div>
-
-<div class="footer">✨ إعداد الأستاذ مقرن المطيري ✨</div>
 
 </body>
 </html>
