@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>منصة لغتي - الصف السادس</title>
+<title>منصة لغتي - مدرسة الإمام الشوكاني</title>
 
 <style>
   body {
@@ -15,7 +15,7 @@
     position: relative;
   }
 
-  /* شعار المدرسة كعلامة مائية */
+  /* خلفية الشعار */
   body::before {
     content: "";
     position: fixed;
@@ -23,19 +23,20 @@
     background-image: url("https://i.postimg.cc/Lhdfcttc/IMG-7700.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 400px;
-    opacity: 0.08;
+    background-size: 420px;
+    opacity: 0.07;
     z-index: -1;
   }
 
-  /* الشريط المتحرك */
+  /* شريط متحرك */
   .marquee {
     background: linear-gradient(to left, #0057b7, #d4af37);
     color: white;
     font-size: 20px;
-    padding: 10px 0;
+    padding: 12px 0;
     overflow: hidden;
     white-space: nowrap;
+    font-weight: bold;
   }
   .marquee span {
     display: inline-block;
@@ -56,5 +57,67 @@
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap:
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .card {
+    background: linear-gradient(to bottom right, #ffffff, #eaefff);
+    border: 2px solid #d4af37;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  }
+
+  .icon {
+    font-size: 40px;
+    color: #0057b7;
+    margin-bottom: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #003b73;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 15px;
+    color: #003b73;
+    font-weight: bold;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="marquee"><span>💬 منصة لغتي - مدرسة الإمام الشوكاني | تصميم وبرمجة الأستاذ مقرن المطيري 💫</span></div>
+
+<header>📘 دروس مادة لغتي - الصف السادس</header>
+
+<div class="grid">
+  <div class="card"><div class="icon">⚠️</div><a href="tahdheer-wa-ighra/">التحذير والإغراء</a></div>
+  <div class="card"><div class="icon">🏅</div><a href="mad7-wa-tham/">أسلوب المدح والذم</a></div>
+  <div class="card"><div class="icon">🟦</div><a href="kana-wa-akhwatuha/">كان وأخواتها</a></div>
+  <div class="card"><div class="icon">🟩</div><a href="inna-akhwatuha/">إن وأخواتها</a></div>
+  <div class="card"><div class="icon">🧑‍🏫</div><a href="ism-fael-mafool/">اسم الفاعل واسم المفعول</a></div>
+  <div class="card"><div class="icon">⚙️</div><a href="ism-alalah/">اسم الآلة</a></div>
+  <div class="card"><div class="icon">✒️</div><a href="hamza-wasl-qata3/">همزة الوصل والقطع</a></div>
+  <div class="card"><div class="icon">👨‍👦</div><a href="hamza-ibn/">همزة ابن وابنة</a></div>
+  <div class="card"><div class="icon">🔤</div><a href="hamza-middle/">الهمزة المتوسطة</a></div>
+  <div class="card"><div class="icon">📘</div><a href="hamza-end/">الهمزة المتطرفة</a></div>
+</div>
+
+<footer>✨ إعداد وتصميم وبرمجة الأستاذ مقرن المطيري ✨</footer>
+
+</body>
+</html>
