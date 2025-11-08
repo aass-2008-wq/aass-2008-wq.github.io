@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>منصة لغتي - مدرسة الإمام الشوكاني</title>
+<title>منهج مادة لغتي للصف السادس</title>
 
 <style>
   body {
     font-family: "Cairo", sans-serif;
-    background: #f8faff;
+    background: #f9fbff;
     margin: 0;
     padding: 0;
     color: #003b73;
     position: relative;
   }
 
-  /* خلفية الشعار */
+  /* الخلفية مع شعار المدرسة */
   body::before {
     content: "";
     position: fixed;
@@ -23,76 +23,78 @@
     background-image: url("https://i.postimg.cc/Lhdfcttc/IMG-7700.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 420px;
+    background-size: 400px;
     opacity: 0.07;
     z-index: -1;
   }
 
-  /* شريط متحرك */
+  /* الشريط المتحرك */
   .marquee {
-    background: linear-gradient(to left, #0057b7, #d4af37);
-    color: white;
-    font-size: 20px;
-    padding: 12px 0;
+    background: linear-gradient(to right, #d4af37, #0057b7);
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 0;
     overflow: hidden;
     white-space: nowrap;
     font-weight: bold;
   }
   .marquee span {
     display: inline-block;
-    animation: scroll 15s linear infinite;
+    animation: scrollLeft 22s linear infinite;
   }
-  @keyframes scroll {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
+  @keyframes scrollLeft {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
   }
 
   header {
     text-align: center;
-    padding: 20px 0 5px;
+    padding: 20px 10px 5px;
     font-size: 26px;
     color: #003b73;
     font-weight: bold;
   }
 
+  /* الشبكة للمربعات */
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 15px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+    padding: 25px;
   }
 
+  /* المربعات */
   .card {
     background: linear-gradient(to bottom right, #ffffff, #eaefff);
     border: 2px solid #d4af37;
-    border-radius: 16px;
-    padding: 20px;
+    border-radius: 15px;
+    padding: 25px 15px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
   }
   .card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0,0,0,0.15);
   }
 
-  .icon {
-    font-size: 40px;
-    color: #0057b7;
-    margin-bottom: 10px;
-  }
-
-  a {
+  .card a {
     text-decoration: none;
     color: #003b73;
-    font-weight: bold;
     font-size: 18px;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
+  /* التذييل */
   footer {
+    background: #d4af37;
+    color: #003b73;
     text-align: center;
     padding: 15px;
-    color: #003b73;
     font-weight: bold;
   }
 </style>
@@ -100,24 +102,24 @@
 
 <body>
 
-<div class="marquee"><span>💬 منصة لغتي - مدرسة الإمام الشوكاني | تصميم وبرمجة الأستاذ مقرن المطيري 💫</span></div>
+<div class="marquee"><span>منصة لغتي – مدرسة الإمام الشوكاني – إعداد وتصميم الأستاذ مقرن المطيري</span></div>
 
-<header>📘 دروس مادة لغتي - الصف السادس</header>
+<header>📘 منهج مادة لغتي للصف السادس</header>
 
 <div class="grid">
-  <div class="card"><div class="icon">⚠️</div><a href="tahdheer-wa-ighra/">التحذير والإغراء</a></div>
-  <div class="card"><div class="icon">🏅</div><a href="mad7-wa-tham/">أسلوب المدح والذم</a></div>
-  <div class="card"><div class="icon">🟦</div><a href="kana-wa-akhwatuha/">كان وأخواتها</a></div>
-  <div class="card"><div class="icon">🟩</div><a href="inna-akhwatuha/">إن وأخواتها</a></div>
-  <div class="card"><div class="icon">🧑‍🏫</div><a href="ism-fael-mafool/">اسم الفاعل واسم المفعول</a></div>
-  <div class="card"><div class="icon">⚙️</div><a href="ism-alalah/">اسم الآلة</a></div>
-  <div class="card"><div class="icon">✒️</div><a href="hamza-wasl-qata3/">همزة الوصل والقطع</a></div>
-  <div class="card"><div class="icon">👨‍👦</div><a href="hamza-ibn/">همزة ابن وابنة</a></div>
-  <div class="card"><div class="icon">🔤</div><a href="hamza-middle/">الهمزة المتوسطة</a></div>
-  <div class="card"><div class="icon">📘</div><a href="hamza-end/">الهمزة المتطرفة</a></div>
+  <div class="card" onclick="location.href='tahdheer-ighraa/'"><a>التحذير والإغراء</a></div>
+  <div class="card" onclick="location.href='mad7-tham/'"><a>أسلوب المدح والذم</a></div>
+  <div class="card" onclick="location.href='kana-wa-akhwatuha/'"><a>كان وأخواتها</a></div>
+  <div class="card" onclick="location.href='inna-akhwatuha/'"><a>إن وأخواتها</a></div>
+  <div class="card" onclick="location.href='ism-fael-mafool/'"><a>اسم الفاعل واسم المفعول</a></div>
+  <div class="card" onclick="location.href='ism-alalah/'"><a>اسم الآلة</a></div>
+  <div class="card" onclick="location.href='hamzat-wasl-qata3/'"><a>همزة الوصل والقطع</a></div>
+  <div class="card" onclick="location.href='hamzat-ibn/'"><a>همزة ابن وابنة</a></div>
+  <div class="card" onclick="location.href='hamza-middle/'"><a>الهمزة المتوسطة</a></div>
+  <div class="card" onclick="location.href='hamza-end/'"><a>الهمزة المتطرفة</a></div>
 </div>
 
-<footer>✨ إعداد وتصميم وبرمجة الأستاذ مقرن المطيري ✨</footer>
+<footer>جميع الحقوق محفوظة © 2025 – منصة لغتي بإشراف الأستاذ مقرن المطيري</footer>
 
 </body>
 </html>
