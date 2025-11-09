@@ -38,13 +38,16 @@
     white-space: nowrap;
     font-weight: bold;
   }
+
   .marquee span {
     display: inline-block;
-    animation: scrollLeft 22s linear infinite;
+    animation: scrollLeft 12s linear infinite;
+    animation-delay: 0s;       /* ✅ يبدأ فوراً */
   }
+
   @keyframes scrollLeft {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
   }
 
   header {
@@ -108,24 +111,60 @@
 
 <body>
 
-<div class="marquee"><span>✨ منصة لغتي – مشروع تعليمي يهدف لتبسيط دروس اللغة العربية لطلاب الصف السادس ✨</span></div>
+<!-- ✅ الشريط المتحرك -->
+<div class="marquee">
+  <span>✨ منصة لغتي – مشروع تعليمي يهدف لتبسيط دروس اللغة العربية لطلاب الصف السادس ✨</span>
+</div>
 
 <header>📘 منهج مادة لغتي للصف السادس</header>
 
 <div class="grid">
-  <div class="card" onclick="location.href='tahdheer-ighraa/'"><span class="icon">⚠️</span><a>التحذير والإغراء</a></div>
-  <div class="card" onclick="location.href='mad7-tham/'"><span class="icon">🏅</span><a>أسلوب المدح والذم</a></div>
-  <div class="card" onclick="location.href='kana-wa-akhwatuha/'"><span class="icon">🟩</span><a>كان وأخواتها</a></div>
-  <div class="card" onclick="location.href='inna-akhwatuha/'"><span class="icon">🟪</span><a>إن وأخواتها</a></div>
-  <div class="card" onclick="location.href='ism-fael-mafool/'"><span class="icon">✍️</span><a>اسم الفاعل واسم المفعول</a></div>
-  <div class="card" onclick="location.href='ism-alalah/'"><span class="icon">⚙️</span><a>اسم الآلة</a></div>
-  <div class="card" onclick="location.href='hamzat-wasl-qata3/'"><span class="icon">✴️</span><a>همزة الوصل والقطع</a></div>
-  <div class="card" onclick="location.href='hamzat-ibn/'"><span class="icon">👨‍👦</span><a>همزة ابن وابنة</a></div>
-  <div class="card" onclick="location.href='hamza-middle/'"><span class="icon">🖋️</span><a>الهمزة المتوسطة</a></div>
-  <div class="card" onclick="location.href='hamza-end/'"><span class="icon">🔹</span><a>الهمزة المتطرفة</a></div>
+
+  <div class="card" onclick="location.href='tahdheer-ighraa/'">
+    <span class="icon">⚠️</span><a>التحذير والإغراء</a>
+  </div>
+
+  <div class="card" onclick="location.href='mad7-tham/'">
+    <span class="icon">🏅</span><a>أسلوب المدح والذم</a>
+  </div>
+
+  <div class="card" onclick="location.href='kana-wa-akhwatuha/'">
+    <span class="icon">🟦</span><a>كان وأخواتها</a>
+  </div>
+
+  <div class="card" onclick="location.href='inna-akhwatuha/'">
+    <span class="icon">🟪</span><a>إن وأخواتها</a>
+  </div>
+
+  <div class="card" onclick="location.href='ism-fael-mafool/'">
+    <span class="icon">✍️</span><a>اسم الفاعل واسم المفعول</a>
+  </div>
+
+  <div class="card" onclick="location.href='ism-alalah/'">
+    <span class="icon">⚙️</span><a>اسم الآلة</a>
+  </div>
+
+  <div class="card" onclick="location.href='hamzat-wasl-qata3/'">
+    <span class="icon">✴️</span><a>همزة الوصل والقطع</a>
+  </div>
+
+  <div class="card" onclick="location.href='hamzat-ibn/'">
+    <span class="icon">👨‍👦</span><a>همزة ابن وابنة</a>
+  </div>
+
+  <div class="card" onclick="location.href='hamza-middle/'">
+    <span class="icon">🖋️</span><a>الهمزة المتوسطة</a>
+  </div>
+
+  <div class="card" onclick="location.href='hamza-end/'">
+    <span class="icon">🔹</span><a>الهمزة المتطرفة</a>
+  </div>
+
 </div>
 
-<footer>منصة لغتي – إعداد وبرمجة الأستاذ مقرن المطيري © 2025</footer>
+<footer>
+  منصة لغتي – إعداد وبرمجة الأستاذ مقرن المطيري © 2025
+</footer>
 
 </body>
 </html>
